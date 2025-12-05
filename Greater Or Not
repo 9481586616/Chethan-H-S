@@ -1,0 +1,23 @@
+package com.acharya;
+
+import java.util.Scanner;
+
+public class GreaterOrNot {
+     
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Numbers : ");
+		int a =sc.nextInt();
+		int b =sc.nextInt();
+		
+		if(a == 6 || b==6 || a+b==6 || a-b==6 || a == Math.abs(a) || b== Math.abs(b)) {
+			System.out.println("True");
+			
+		} else {
+		    System.out.println("False");
+		} sc.close();
+	}
+
+}
