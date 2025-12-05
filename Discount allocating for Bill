@@ -1,0 +1,32 @@
+package MyProject;
+
+import java.util.Scanner;
+
+
+public class Bill {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   Scanner sc = new Scanner(System.in);
+   System.out.println("Enter the total Amuont:");
+   int P1 = sc.nextInt();
+   if(P1>2000)
+   {
+	 int  Atotal = P1*15/100;
+	 int  bill= P1-Atotal;
+	   System.out.println("after 15% Discount:" +bill);
+	   
+   }else if(P1>1000)
+   {
+	 int  Atotal = P1*10/100;
+	 int  bill= P1-Atotal;
+	   System.out.println("after 10% Discount:" +bill);
+	   
+   }else
+   {
+	   System.out.println("Please Pay :"+P1+" "+"No Discount");
+   }
+	   {}sc.close();
+	}
+
+}
