@@ -1,0 +1,30 @@
+package MyProject;
+
+public class Pizza {
+
+	public static void main(String[] args) {
+String size = "Medium"; 
+int price = 0;
+switch (size) {
+	   case "Small":
+	    price = 125;
+	   break;
+	  case "Medium":
+	   price = 250;
+	     break;
+	   case "Large":
+	   price = 300;
+	                break;
+	            case "Very large":
+	                price = 350;
+	                break;
+	            default:
+	                System.out.println("Invalid size entered.");
+	        }
+
+	        if (price > 0) {
+	            System.out.println("The price for a " + size + " pizza is: ₹" + price);
+
+	}
+
+	}}
