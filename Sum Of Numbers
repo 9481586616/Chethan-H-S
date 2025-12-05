@@ -1,0 +1,22 @@
+package com.acharya.classes;
+
+import java.util.Scanner;
+
+public class SumOfNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the Numbers: ");
+		int number_1 = sc.nextInt();
+		int number_2 = sc.nextInt();
+		int sum = number_1 + number_2;
+		int number_3 = sc.nextInt();
+		int sum_1 = sum + number_3;
+		int number_4 = sc.nextInt();
+		int sum_3 = sum_1 + number_4;
+
+		System.out.println("Sum of Numbers is :" + sum_3);
+		sc.close();
+	}
+}
