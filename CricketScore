@@ -1,0 +1,28 @@
+package com.acharya.classes;
+
+import java.util.Scanner;
+
+public class CricketScore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int first_score = sc.nextInt();
+		int second_score = sc.nextInt();
+		if(first_score>second_score) {
+			System.out.println("Team one is win:"+first_score);
+			
+		}else if(first_score > second_score && second_score>first_score+7) {
+			System.out.println("team two is win :");
+			
+		}else if(first_score == second_score) {
+			System.out.println("tie Match");
+		}else{
+			System.out.println("Invalid");
+		}
+		
+    sc.close();
+    
+	}
+
+}
