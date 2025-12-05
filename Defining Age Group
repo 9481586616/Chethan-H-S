@@ -1,0 +1,25 @@
+package com.acharya;
+import java.util.Scanner;
+
+public class DefineAgeGroup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner Sc = new Scanner(System.in);
+    System.out.println("Enter your Age : ");
+    int age = Sc.nextInt();
+    if(age <=12 ) {
+    	System.out.println("he is kid");
+    }else if(age <=19) {
+    	System.out.println("He is teenager");
+    }else if(age<= 40) {
+    	System.out.println("he is Youngstar");
+    }else if(age<=55) {
+    	System.out.println("He is aged man");
+    }else {
+    	System.out.println("he is Sinear Citizen");
+    }
+    Sc.close();
+	}
+
+}
