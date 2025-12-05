@@ -1,0 +1,32 @@
+package MyProject;
+
+import java.util.Scanner;
+
+public class ElectricBill {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the Units:");
+int u1=sc.nextInt();
+double P1 = 0;
+
+if (u1 < 30) {
+	P1 = u1 * 3.50;
+} else if (u1 >= 30 && u1 < 50) {
+    P1 = u1 * 4.25;
+} else if (u1 >= 50 && u1 < 100) {
+    P1 = u1 * 5.25;
+} else if (u1 >= 100) {
+    P1 = u1 * 5.85;
+} else {
+    System.out.println("Please enter valid units");
+}
+
+System.out.println("Total Amount is : " + P1);
+sc.close();
+
+
+	}
+
+}
