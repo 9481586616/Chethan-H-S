@@ -1,0 +1,20 @@
+package com.acharya;
+
+import java.util.Scanner;
+
+public class ReversePyramid {
+
+    public static void main(String[] args) {
+    	Scanner Sc = new Scanner(System.in);
+    	System.out.println("enter the base size of pyramid :");
+        int rows = Sc.nextInt();
+
+        for(int i = rows; i >= 1; i--) {        
+            for(int j = 1; j <= i; j++) {       
+                System.out.print("* ");
+            }
+            System.out.println();               
+        }
+        Sc.close();
+    }
+}
