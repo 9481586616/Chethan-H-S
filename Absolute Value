@@ -1,0 +1,16 @@
+package com.acharya;
+
+import java.util.Scanner;
+
+public class AbsoluteValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter a Number :");
+    Scanner sc = new Scanner(System.in);
+     int Number = sc.nextInt();
+     int absolute = Math.abs(Number);
+     System.out.println("The Absolute value of : " +Number+ " is " +absolute);
+     }
+
+}
