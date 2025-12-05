@@ -1,0 +1,21 @@
+package com.acharya.classes;
+import java.util.Arrays;
+public class SearchElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+        int arr[]= {1,2,3,4,5};
+        int search = Arrays.binarySearch(arr, 4);
+        if(search>=0)
+        {
+        	System.out.println("search elelement found at:"+search);
+        }else
+        {
+        	System.out.println("search element is not found :+"+search);
+        }
+       
+	}
+
+}
+ 
