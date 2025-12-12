@@ -1,0 +1,23 @@
+package com.acharya;
+
+public class SumOfDimentionalArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] twoDimensionalArray = { { 2, 3, 4 }, { 1, 5, 2 }, { 2, 4, 5 } };
+
+		int totalSumOfElements = 0;
+
+		for (int rowIndex = 0; rowIndex < twoDimensionalArray.length; rowIndex++) {
+
+			for (int columnIndex = 0; columnIndex < twoDimensionalArray[rowIndex].length; columnIndex++) {
+
+				totalSumOfElements += twoDimensionalArray[rowIndex][columnIndex];
+			}
+		}
+
+		System.out.println("The sum of two-dimensional array is: " + totalSumOfElements);
+
+	}
+
+}
