@@ -1,0 +1,23 @@
+package com.acharya;
+
+public class Employee {
+	int id = 123;
+    String name = "chethu";
+    double salary =98888;
+    public void getSalary() {
+    	System.out.println("the salary is"+salary);
+    }
+     public void getName() {
+	 System.out.println("the name is :" +name);
+     }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+    Employee emp = new Employee();
+    System.out.println(emp.id);
+    System.err.println(emp.name);
+    System.out.println(emp.salary);
+	}
+	
+
+}
