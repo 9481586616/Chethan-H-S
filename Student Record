@@ -1,0 +1,48 @@
+package com.acharya;
+
+import java.util.Scanner;
+
+class StudentDetails {
+	String studentName;
+	int studentAge;
+	double studentMarks;
+}
+
+public class StudentRecord {
+
+	public static void main(String[] args) {
+
+		Scanner Sc = new Scanner(System.in);
+
+		System.out.print("Enter how many students: ");
+		int totalStudents = Sc.nextInt();
+		Sc.nextLine();
+		StudentDetails[] studentList = new StudentDetails[totalStudents];
+
+		for (int studentNumber = 0; studentNumber < totalStudents; studentNumber++) {
+
+			studentList[studentNumber] = new StudentDetails();
+
+			System.out.println("Enter details for Student " + (studentNumber + 1));
+
+			System.out.print("Student Name: ");
+			studentList[studentNumber].studentName = Sc.nextLine();
+
+			System.out.print("Student Age: ");
+			studentList[studentNumber].studentAge = Sc.nextInt();
+
+			System.out.print("Student Marks: ");
+			studentList[studentNumber].studentMarks = Sc.nextDouble();
+			Sc.nextLine();
+		}
+
+		for (int studentNumber = 0; studentNumber < totalStudents; studentNumber++) {
+			System.out.println("\nStudent " + (studentNumber + 1));
+			System.out.println("Name  : " + studentList[studentNumber].studentName);
+			System.out.println("Age   : " + studentList[studentNumber].studentAge);
+			System.out.println("Marks : " + studentList[studentNumber].studentMarks);
+		}
+
+		Sc.close();
+	}
+}
